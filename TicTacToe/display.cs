@@ -21,7 +21,8 @@ namespace TicTacToe
             Console.WriteLine("     |     |     ");
             printWinner(board);
         }
-        public void printWinner(string[] board)
+        
+        public string printWinner(string[] board)
         {
             string placeHolder = "";
             for (int i = 0; i < 9; i++)
@@ -35,11 +36,11 @@ namespace TicTacToe
             {
                 if (board[0] == "X")
                 {
-                    Console.WriteLine("X");
+                    return "X";
                 }
                 else
                 {
-                    Console.WriteLine("O");
+                    return "O";
                 }
 
             }
@@ -47,11 +48,11 @@ namespace TicTacToe
             {
                 if (board[0] == "X")
                 {
-                    Console.WriteLine("X");
+                    return "X";
                 }
                 else
                 {
-                    Console.WriteLine("O");
+                    return "O";
                 }
 
             }
@@ -59,11 +60,11 @@ namespace TicTacToe
             {
                 if (board[0] == "X")
                 {
-                    Console.WriteLine("X");
+                    return "X";
                 }
                 else
                 {
-                    Console.WriteLine("O");
+                    return "O";
                 }
 
             }
@@ -72,11 +73,11 @@ namespace TicTacToe
             {
                 if (board[0] == "X")
                 {
-                    Console.WriteLine("X");
+                    return "X";
                 }
                 else
                 {
-                    Console.WriteLine("O");
+                    return "O";
                 }
 
             }
@@ -84,11 +85,11 @@ namespace TicTacToe
             {
                 if (board[0] == "X")
                 {
-                    Console.WriteLine("X");
+                    return "X";
                 }
                 else
                 {
-                    Console.WriteLine("O");
+                    return "O";
                 }
 
             }
@@ -96,11 +97,11 @@ namespace TicTacToe
             {
                 if (board[0] == "X")
                 {
-                    Console.WriteLine("X");
+                    return "X";
                 }
                 else
                 {
-                    Console.WriteLine("O");
+                    return "O";
                 }
 
             }
@@ -109,11 +110,11 @@ namespace TicTacToe
             {
                 if (board[0] == "X")
                 {
-                    Console.WriteLine("X");
+                    return "X";
                 }
                 else
                 {
-                    Console.WriteLine("O");
+                    return "O";
                 }
 
             }
@@ -121,11 +122,11 @@ namespace TicTacToe
             {
                 if (board[0] == "X")
                 {
-                    Console.WriteLine("X"); //"X"
+                    return "X";
                 }
                 else
                 {
-                    Console.WriteLine("O"); //"O"
+                    return "O";
                 }
             }
             //No winner
@@ -149,11 +150,11 @@ namespace TicTacToe
                 placeHolder.Contains("8") ||
                 placeHolder.Contains("9"))
             {
-                Console.WriteLine("");
+                return "";
             }
             else
             {
-                Console.WriteLine("C");
+                return "C";
             }
         }
     }
