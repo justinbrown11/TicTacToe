@@ -131,7 +131,7 @@ namespace TicTacToe
                     return "O";
                 }
             }
-            //Use placeHolder variable to check for Diagonal Wins
+            //Use placeHolder variable to see if the game continues (or results in a tie)
             else if (
                 placeHolder.Contains("1") ||
                 placeHolder.Contains("2") ||
