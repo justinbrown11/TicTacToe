@@ -60,29 +60,33 @@ namespace TicTacToe
                 if (winner == "X")
                 {
                     d.printBoard(boardArray);
-                    Console.Write("Congratulations, Player 1! You win!");
+                    Console.WriteLine("Congratulations, Player 1! You win!");
                     gameOver = true;
                     break;
                 }
                 else if (winner == "O")
                 {
                     d.printBoard(boardArray);
-                    Console.Write("Congratulations, Player 2! You win!");
+                    Console.WriteLine("Congratulations, Player 2! You win!");
                     gameOver = true;
                     break;
                 }
                 else if (winner == "C")
                 {
                     d.printBoard(boardArray);
-                    Console.Write("Cat's! It's a tie! Please play again.");
+                    Console.WriteLine("Cat's! It's a tie! Please play again.");
                     gameOver = true;
                     break;
                 }
 
                 //nobody won and not a tie so continue playing (means "winner" must be "")
                 d.printBoard(boardArray);//print the board
+
                 int player2Choice = 0; //instantiate choice
                 inputValid = false; //reset inputValid to false
+
+                Console.Write("Player 2, select your square: ");
+
                 //player 2's turn
                 while (!inputValid) //same as == false
                 {
@@ -113,19 +117,19 @@ namespace TicTacToe
                 if (winner == "X")
                 {
                     d.printBoard(boardArray);
-                    Console.Write("Congratulations, Player 1! You win!");
+                    Console.WriteLine("Congratulations, Player 1! You win!");
                     gameOver = true;
                 }
                 else if (winner == "O")
                 {
                     d.printBoard(boardArray);
-                    Console.Write("Congratulations, Player 2! You win!");
+                    Console.WriteLine("Congratulations, Player 2! You win!");
                     gameOver = true;
                 }
                 else if (winner == "C")
                 {
                     d.printBoard(boardArray);
-                    Console.Write("Cat's! It's a tie! Please play again.");
+                    Console.WriteLine("Cat's! It's a tie! Please play again.");
                     gameOver = true;
                 }
                 //nobody won and not a tie so continue playing (means "winner" must be "")
