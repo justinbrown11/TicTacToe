@@ -8,6 +8,7 @@ namespace TicTacToe
 {
     class Display
     {
+        //Create tic tac toe board
         public void printBoard(string[] board)
         {
             Console.WriteLine("     |     |     ");
@@ -22,6 +23,7 @@ namespace TicTacToe
             printWinner(board);
         }
         
+        //Concatenate array to later check if board is full (cat's game)
         public string printWinner(string[] board)
         {
             string placeHolder = "";
@@ -31,7 +33,7 @@ namespace TicTacToe
             }
 
 
-            //Horizontal
+            //Check for Horizontal Win
             if ((board[0] == board[1]) && (board[1] == board[2]))
             {
                 if (board[0] == "X")
@@ -68,7 +70,7 @@ namespace TicTacToe
                 }
 
             }
-            //Vertical
+            //Check for Vertical Wins
             else if ((board[0] == board[3]) && (board[3] == board[6]))
             {
                 if (board[0] == "X")
@@ -105,7 +107,7 @@ namespace TicTacToe
                 }
 
             }
-            //Diagonal
+            //Check for Diagonal Wins
             else if ((board[0] == board[4]) && (board[4] == board[8]))
             {
                 if (board[0] == "X")
@@ -129,6 +131,7 @@ namespace TicTacToe
                     return "O";
                 }
             }
+            //Use placeHolder variable to check for Diagonal Wins
             else if (
                 placeHolder.Contains("1") ||
                 placeHolder.Contains("2") ||
@@ -142,6 +145,7 @@ namespace TicTacToe
             {
                 return "";
             }
+            //Check for Cat's game
             else
             {
                 return "C";
